@@ -1,8 +1,7 @@
-# Cost Optimization
 
-# **Problem Statement**
+# Problem Statement
 
-## You work for xyz Company. Your company wanted to reduce the bill on unused EC2-Instances during office off hours.
+### You work for xyz Company. Your company wanted to reduce the bill on unused EC2-Instances during office off hours.
 
 ## You are asked to perform the following tasks:
 
@@ -10,10 +9,14 @@
 
 ### 2. Start the EC2-Instances ( Test, Dev & QA ) after 8AM before 9AM
 
-Create Policy with following permissions for EC2 Instances 
+Create Policy with following permissions for EC2 Instances
 
-```jsx
-{
+## Create Policy
+
+Create Policy with following permissions for EC2 Instances
+
+```bash
+ {
 	"Version": "2012-10-17",
 	"Statement": [
 		{
@@ -36,4 +39,8 @@ Create Policy with following permissions for EC2 Instances
 }
 ```
 
+
+## Screenshots
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
