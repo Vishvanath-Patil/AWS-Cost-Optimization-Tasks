@@ -51,17 +51,7 @@ Create Policy with following permissions for EC2 Instances
 
 ![l8](https://github.com/Vishvanath-Patil/AWS-Cost-Optimization-Tasks/assets/130968991/185c3d42-83b1-4abe-a3ca-89f3f666585d)
 
-```bash
- import boto3
-
-region = "us-west-2"
-instances = []
-
-ec2 = boto3.client('ec2', region_name=region)
-def lambda_handler(event, context):
-  ec2.stop_instances(InstancesIds=instances)
-  print("Stopped Your instances: '+ str")
-```
+![image](https://github.com/Vishvanath-Patil/AWS-Cost-Optimization-Tasks/assets/130968991/ea97e0a1-8c68-41c2-a9c8-e1f5680a8965)
 
 ![l10](https://github.com/Vishvanath-Patil/AWS-Cost-Optimization-Tasks/assets/130968991/89c4d7f2-7613-43d8-8aab-cfd3fd4bd534)
 
