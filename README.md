@@ -36,6 +36,17 @@ Create Policy with following permissions for EC2 Instances
 	]
 }
 ```
+```bash
+ import boto3
+
+region = "us-west-2"
+instances = ['i-009ada209b43ae9f9','i-09c079adedcda7d67','i-0818c7818f67330c6']
+
+ec2 = boto3.client('ec2', region_name=region)
+def lambda_handler(event, context):
+  ec2.stop_instances(InstanceIds=instances) #For Start change to start_instances
+  print("Started Your instances: '+ str")
+```
 ![lambda3](https://github.com/Vishvanath-Patil/AWS-Cost-Optimization-Tasks/assets/130968991/2151130d-3b2f-45eb-a94c-92b75d22cf80)
 
 ![lambda2](https://github.com/Vishvanath-Patil/AWS-Cost-Optimization-Tasks/assets/130968991/402de95a-38bd-4ea7-9256-ca476fe5af1d)
@@ -58,6 +69,10 @@ Create Policy with following permissions for EC2 Instances
 ![l11](https://github.com/Vishvanath-Patil/AWS-Cost-Optimization-Tasks/assets/130968991/3cb88e80-e7bd-43aa-846d-e35dd039c71c)
 
 ![l12](https://github.com/Vishvanath-Patil/AWS-Cost-Optimization-Tasks/assets/130968991/b2ae32df-23f2-48f3-9bd1-69ae64c5f022)
+
+![strtrigger1](https://github.com/Vishvanath-Patil/AWS-Cost-Optimization-Tasks/assets/130968991/a32c55d0-77ca-4958-9e86-c48ca4991b0e)
+
+![strtr2](https://github.com/Vishvanath-Patil/AWS-Cost-Optimization-Tasks/assets/130968991/21a69bcd-404d-4935-9bec-c433f5a744a0)
 
 
 
