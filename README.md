@@ -9,8 +9,6 @@
 
 ### 2. Start the EC2-Instances ( Test, Dev & QA ) after 8AM before 9AM
 
-Create Policy with following permissions for EC2 Instances
-
 ## Create Policy
 
 Create Policy with following permissions for EC2 Instances
